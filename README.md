@@ -5,5 +5,7 @@
 ## Getting Started locally
 
 - By Docker compose: `docker-compose up`
-- `npm run dev`
-- `npm run build` and `npm start`
+  OR
+- `npm i`
+- Dev mode: `npm run dev`
+- Prod mode: `npm run build` and `npm start`

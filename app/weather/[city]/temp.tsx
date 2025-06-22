@@ -4,6 +4,7 @@ type Props = {
   setMetricsUnit: React.Dispatch<React.SetStateAction<boolean>>;
   metricsUnit: boolean;
 };
+
 function Temp({ setMetricsUnit, metricsUnit }: Props) {
   return (
     <div
