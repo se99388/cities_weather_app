@@ -16,7 +16,7 @@ function CityCard({ cityData }: Props) {
         setLoading(true);
       }}
       href={`/weather/${name}`}
-      className="relative h-[200px] w-[180px] rounded-md text-white px-3 py-4 cursor-pointer hover:scale-105 transition-all duration-300 ease-in-out overflow-hidden"
+      className="relative h-[200px] w-full sm:w-[180px] rounded-md text-white px-3 py-4 cursor-pointer hover:scale-105 transition-all duration-300 ease-in-out overflow-hidden"
       style={{
         backgroundImage: `url(${image})`,
         backgroundSize: "cover",
