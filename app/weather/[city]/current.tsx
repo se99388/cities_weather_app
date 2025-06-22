@@ -10,6 +10,7 @@ type Props = {
 function Current({ currentWeather }: Props) {
   const [metricsUnit, setMetricsUnit] = useState(true);
   const { current, location } = currentWeather;
+
   return (
     <div>
       <div>
@@ -18,7 +19,7 @@ function Current({ currentWeather }: Props) {
         <p className="text-lg">{location.localtime}</p>
         <div className="font-bold text-2xl">Current weather:</div>
         <div className="flex gap-2 items-center">
-          <div className="text-3xl font-bold min-w-[100px] ">
+          <div className="text-3xl font-bold min-w-[100px]">
             {metricsUnit ? `${current.temp_c} °C` : `${current.temp_f} °F`}
           </div>
           <Temp metricsUnit={metricsUnit} setMetricsUnit={setMetricsUnit} />
